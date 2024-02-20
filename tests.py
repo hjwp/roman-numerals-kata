@@ -7,6 +7,16 @@ from roman import add
         ("I", "I", "II"),
         ("I", "II", "III"),
         ("II", "I", "III"),
+        ("I", "III", "IIII"),
+        ("III", "I", "IIII"),
+        ("II", "II", "IIII"),
+        ("I", "IIII", "V"),
+        ("V", "I", "VI"),
+        ("III", "III", "VI"),
+        ("I", "V", "VI"),
+        ("V", "V", "X"),
+        ("V", "VI", "XI"),
+        ("VI", "VI", "XII"),
     ]
 )
 def test1(a, b, expected):
