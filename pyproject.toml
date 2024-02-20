@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roman"
+version = "0"
+
+dependencies = [
+    "pytest",
+]
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+addopts = ["--tb=short"]
