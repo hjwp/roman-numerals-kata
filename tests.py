@@ -1,5 +1,15 @@
+import pytest
+
 from roman import add
 
-def test1() -> None:
-    # check that I + I == II
-    assert add("I", "I") == "II"
+
+@pytest.mark.parametrize(
+    "a, b, expected",
+    [
+        ("I", "I", "II"),
+        ("I", "II", "III"),
+        ("II", "I", "III"),
+    ],
+)
+def test1(a: str, b: str, expected: str) -> None:
+    assert add(a, b) == expected
